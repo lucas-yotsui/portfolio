@@ -24,7 +24,7 @@
   </p>
 
   <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
+    Hover over the logos for a nice effect
   </p>
 </main>
 
