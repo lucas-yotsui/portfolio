@@ -2,8 +2,10 @@
 	import Chapters from "./Chapters.svelte";
   import Social from "./Social.svelte";
 
-  let chapters = {
-    current: 1,
+  export let currentChapter;
+
+  $: chapters = {
+    current: currentChapter,
     all: [
       {
         id: 1,
