@@ -19,17 +19,17 @@
     {
       name: "GitHub",
       url: "https://github.com/lucas-yotsui",
-      src: "/images/github.svg",
+      src: "./images/github.svg",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/lucas-yukio-yotsui-de-carvalho-7b6492277",
-      src: "/images/linkedin.svg",
+      src: "./images/linkedin.svg",
     },
     {
       name: "Currículo",
       url: "https://drive.google.com",
-      src: "/images/download.svg",
+      src: "./images/download.svg",
     }
   ]
 </script>

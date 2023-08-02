@@ -28,7 +28,7 @@
             setTimeout(() => { autoplay = true }, 5000);
         }
     }>
-        <img src="/images/arrow.svg" alt="Previous">
+        <img src="./images/arrow.svg" alt="Previous">
     </button>
     {#each contents as img}
         {#if img.id == active}
@@ -47,7 +47,7 @@
             setTimeout(() => { autoplay = true }, 10000);
         }
     }>
-        <img src="/images/arrow.svg" alt="Next" style="rotate: 180deg;">
+        <img src="./images/arrow.svg" alt="Next" style="rotate: 180deg;">
     </button>
 </div>
 

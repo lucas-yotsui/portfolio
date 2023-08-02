@@ -4,17 +4,17 @@
         "imgs":[
             {
                 "id": 1,
-                "src": "/obnzip/1-angulo-tanque.png",
+                "src": "./obnzip/1-angulo-tanque.png",
                 "alt": "Primeiro ângulo do modelo 3D do tanque usado nos experimentos"
             },
             {
                 "id": 2,
-                "src": "/obnzip/2-angulo-tanque.png",
+                "src": "./obnzip/2-angulo-tanque.png",
                 "alt": "Segundo ângulo do modelo 3D do tanque usado nos experimentos"
             },
             {
                 "id": 3,
-                "src": "/obnzip/3-angulo-tanque.png",
+                "src": "./obnzip/3-angulo-tanque.png",
                 "alt": "Terceiro ângulo do modelo 3D do tanque usado nos experimentos"
             }
         ],
@@ -29,42 +29,42 @@
         "imgs":[
             {
                 "id": 1,
-                "src": "/iase2/test1.png",
+                "src": "./iase2/test1.png",
                 "alt": "Placeholder for dummy data"
             },
             {
                 "id": 2,
-                "src": "/iase2/test2.png",
+                "src": "./iase2/test2.png",
                 "alt": "Placeholder for dummy data"
             },
             {
                 "id": 3,
-                "src": "/iase2/test3.png",
+                "src": "./iase2/test3.png",
                 "alt": "Placeholder for dummy data"
             },
             {
                 "id": 4,
-                "src": "/iase2/test4.png",
+                "src": "./iase2/test4.png",
                 "alt": "Placeholder for dummy data"
             },
             {
                 "id": 5,
-                "src": "/iase2/test5.png",
+                "src": "./iase2/test5.png",
                 "alt": "Placeholder for dummy data"
             },
             {
                 "id": 6,
-                "src": "/iase2/test6.png",
+                "src": "./iase2/test6.png",
                 "alt": "Placeholder for dummy data"
             },
             {
                 "id": 7,
-                "src": "/iase2/test7.png",
+                "src": "./iase2/test7.png",
                 "alt": "Placeholder for dummy data"
             },
             {
                 "id": 8,
-                "src": "/iase2/test8.png",
+                "src": "./iase2/test8.png",
                 "alt": "Placeholder for dummy data"
             }
         ],
