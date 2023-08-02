@@ -9,9 +9,11 @@
 </div>
 <div class="rightSide">
 	<section id="Projetos">
+		<h2>Meus Projetos</h2>
 		<Experiences></Experiences>
 	</section>
 	<section id="Formação">
+		<h2>Minha Formação</h2>
 		<Timeline></Timeline>
 	</section>
 </div>
@@ -32,6 +34,7 @@
 		margin: 0;
 		padding: 30px 0;
         align-items: center;
+		text-align: center;
         gap: 100px;
 	}
 </style>

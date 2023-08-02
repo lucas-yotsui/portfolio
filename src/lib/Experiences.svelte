@@ -3,7 +3,6 @@
     import experiences from "../assets/experiences.json";
 	import { fade, fly } from "svelte/transition";
 	import { sineIn } from "svelte/easing";
-	import { flip } from "svelte/animate";
 
     let hovered;
 

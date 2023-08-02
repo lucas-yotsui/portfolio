@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Certificação Toefl Jr",
+        "year": 2017,
+        "icon": "images/diploma.svg",
+        "text": ""
+    },
+    {
+        "title": "Certificação Toefl ITP",
+        "year": 2020,
+        "icon": "images/diploma.svg",
+        "text": ""
+    },
+    {
+        "title": "Formatura no Ensino Médio",
+        "year": 2020,
+        "icon": "images/cap.svg",
+        "text": ""
+    },
+    {
+        "title": "Início da Graduação na UFSC",
+        "year": 2021,
+        "icon": "images/book.svg",
+        "text": ""
+    },
+    {
+        "title": "Certificação Toeic",
+        "year": 2021,
+        "icon": "images/diploma.svg",
+        "text": ""
+    },
+    {
+        "title": "Início do Projeto de pesquisa da Petrobras (OBNZIP)",
+        "year": 2022,
+        "icon": "images/science.svg",
+        "text": ""
+    },
+    {
+        "title": "Transferência para o Projeto de pesquisa da Renault (IASE2)",
+        "year": 2022,
+        "icon": "images/science.svg",
+        "text": ""
+    }
+]
