@@ -12,7 +12,7 @@
     onMount(() => {
         const id = setInterval(() => {
             if(autoplay) {
-                (active > 1) ? (--active) : (active = contents.length);
+                (active < contents.length) ? (++active) : (active = 1);
             }
         }, 3000);
 
