@@ -15,9 +15,10 @@
 <div class="experiencesList">
     {#each experiences as experience (experience.title)}
         <div 
+            role="region"
             class="experience" 
-            on:pointerenter={(e) => { hovered = experience.title; }}
-            on:pointerleave={(e) => { hovered = ""; }}
+            on:mouseenter={(e) => { hovered = experience.title; }}
+            on:mouseleave={(e) => { hovered = ""; }}
         >
             <h1>{ experience.title }</h1>
         
