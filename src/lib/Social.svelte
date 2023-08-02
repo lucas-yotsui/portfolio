@@ -7,7 +7,7 @@
         <a class="socialButton" href={profile.url}>
             <img src={profile.src} alt={profile.name}>
             <span>{profile.name}</span>
-            <img src="./images/link.svg" alt="Open link" class="link">
+            <img src="images/link.svg" alt="Open link" class="link">
         </a>
     {/each}
 </div>
