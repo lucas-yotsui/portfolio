@@ -1,12 +1,11 @@
 <script>
     export let chapters;
-    export let currentChapter;
 </script>
 
 <ol>
-    {#each chapters as chapter}
-    <a href="#{chapter.name}">
-        <li class={currentChapter == chapter.id ? "active" : ""}><div class="line"></div>{chapter.name}</li>
+    {#each chapters.all as chapter}
+    <a href="#{chapter.name}" on:click={(e) => { chapters.current = chapter.id }}>
+        <li class={chapters.current == chapter.id ? "active" : ""}><div class="line"></div>{chapter.name}</li>
     </a>    
     {/each}
 </ol>
@@ -16,15 +15,16 @@
         color: white;
         text-decoration: none;
     }
-
+    
     ol {
         list-style: none;
         counter-reset: item;
         font-size: 22px;
         line-height: 34px;
-        margin: 0px 0px 0px -40px
+        margin: 0px 0px 0px -40px;
+        width: min-content;
     }
-
+    
     li {
         margin-bottom: 15px;
         display: flex;
@@ -53,7 +53,7 @@
     }
 
     .active {
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .active::before {

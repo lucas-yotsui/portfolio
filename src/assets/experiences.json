@@ -1,0 +1,77 @@
+[
+    {
+        "title": "Projeto da Petrobras",
+        "imgs":[
+            {
+                "id": 1,
+                "src": "/obnzip/1-angulo-tanque.png",
+                "alt": "Primeiro ângulo do modelo 3D do tanque usado nos experimentos"
+            },
+            {
+                "id": 2,
+                "src": "/obnzip/2-angulo-tanque.png",
+                "alt": "Segundo ângulo do modelo 3D do tanque usado nos experimentos"
+            },
+            {
+                "id": 3,
+                "src": "/obnzip/3-angulo-tanque.png",
+                "alt": "Terceiro ângulo do modelo 3D do tanque usado nos experimentos"
+            }
+        ],
+        "texts": [
+            "Estrutura de Fixação dos Componentes para Experimentos com Seawater Batteries",
+            "Controle e Interface de Usuário do Sistema de Geração de Correnteza",
+            "Sistema de Controle de Agendamentos para Uso do Computador do Laboratório"
+        ]
+    },
+    {
+        "title": "Projeto da Renault",
+        "imgs":[
+            {
+                "id": 1,
+                "src": "/iase2/test1.png",
+                "alt": "Placeholder for dummy data"
+            },
+            {
+                "id": 2,
+                "src": "/iase2/test2.png",
+                "alt": "Placeholder for dummy data"
+            },
+            {
+                "id": 3,
+                "src": "/iase2/test3.png",
+                "alt": "Placeholder for dummy data"
+            },
+            {
+                "id": 4,
+                "src": "/iase2/test4.png",
+                "alt": "Placeholder for dummy data"
+            },
+            {
+                "id": 5,
+                "src": "/iase2/test5.png",
+                "alt": "Placeholder for dummy data"
+            },
+            {
+                "id": 6,
+                "src": "/iase2/test6.png",
+                "alt": "Placeholder for dummy data"
+            },
+            {
+                "id": 7,
+                "src": "/iase2/test7.png",
+                "alt": "Placeholder for dummy data"
+            },
+            {
+                "id": 8,
+                "src": "/iase2/test8.png",
+                "alt": "Placeholder for dummy data"
+            }
+        ],
+        "texts": [
+            "Ainda não fiz nada",
+            "Quando fizer coloco",
+            "Até lá fica aqui pra guardar lugar"
+        ]
+    }
+]
