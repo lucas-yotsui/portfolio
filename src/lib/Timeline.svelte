@@ -1,18 +1,35 @@
 <script>
     import items from "../assets/timeline_items.json";
+	import { flip } from "svelte/animate";
+	import { slide } from "svelte/transition";
+	import { cubicOut } from "svelte/easing";
+    
+    let hovered;
 </script>
 
 <div class="timeline">
-    {#each items as item}
-        <div class="card">
+    {#each items as item (item.title)}
+        <div 
+            role="region"
+            class="card" 
+            on:mouseenter={ () => { hovered = item.title} }
+            on:mouseleave={ () => { hovered = ""} }
+            animate:flip
+        >
             <div class="info">
-                <h3 class="title">{ item.title }</h3>
+                <div class="textParts">
+                    <h3 class="title">{ item.title }</h3>
+                    {#if hovered == item.title && item.text}
+                    <p
+                        transition:slide={{ duration: 750, easing:cubicOut }}
+                    > { item.text } </p>
+                    {/if}
+                </div>
                 <div class="iconOutline">
                     <div class="iconContainer">
                         <img src={ item.icon } alt={ item.title } style="">                
                     </div>
                 </div>
-                <p>{ item.text }</p>
 
             </div>
         </div>    
@@ -33,6 +50,7 @@
         display: flex;
         position: relative;
         width: 400px;
+        height: 200px;
     }
     
     .card:nth-child(odd) {
@@ -83,8 +101,12 @@
         border-bottom-right-radius: 0;
     }
     
-    .card:last-child:nth-child(odd) > .info > .title {
+    .card:last-child:nth-child(odd) > .info > .textParts {
         text-align: left;
+    }
+
+    .card:nth-child(even) > .info > .textParts {
+        text-align: right;
     }
 
     .info {
@@ -131,12 +153,13 @@
         color: white;
         position: relative;
         font-weight: 400;
+        width: 100%;
     }
 
     .info::before {
         content: "";
         position: absolute;
-        top: 80px;
+        top: 50%;
         width: 10px;
         height: 10px;
         background: black;
@@ -148,10 +171,13 @@
         direction: rtl;
     }
     
-    .card:nth-child(even) > .info > .title {
+    .card:nth-child(odd) > .info > .textParts {
+        text-align: left;
+    }
+    
+    .card:nth-child(even) > .info > .textParts {
         text-align: right;
     }
-
     
     .card:nth-child(odd) > .info::before {
         left: -5px;
