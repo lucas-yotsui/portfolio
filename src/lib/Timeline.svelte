@@ -19,7 +19,7 @@
             <div class="info">
                 <div class="textParts">
                     <h3 class="title">{ item.title }</h3>
-                    {#if hovered == item.title && item.text}
+                    {#if hovered == item.title && item.text != ""}
                     <p
                         transition:slide={{ duration: 750, easing:cubicOut }}
                     > { item.text } </p>
