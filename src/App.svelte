@@ -75,6 +75,20 @@
 		padding: 30px 0;
         align-items: center;
 		text-align: center;
-        gap: 100px;
+        gap: 25px;
+	}
+
+	.rightSide > section::after {
+		content: "";
+		display: inline-block;
+		margin-top: 50px;
+		width: 75%;
+		height: 2px;
+		background: lightgray;
+		border-radius: 1px;
+	}
+	
+	.rightSide > section:last-child::after {
+		display: none;
 	}
 </style>

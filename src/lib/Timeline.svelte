@@ -45,7 +45,6 @@
         justify-content: right;
     }
 
-    /* Global ::before */
     .card::before {
         content: "";
         position: absolute;
@@ -53,7 +52,6 @@
         border: solid white;
     }
 
-    /* Setting the border of top, bottom, left */
     .card:nth-child(odd)::before {
         left: 0px;
         top: -4.5px;
@@ -62,7 +60,6 @@
         border-radius: 50px 0 0 50px;
     }
 
-    /* Setting the border of top, bottom, right */
     .card:nth-child(even)::before {
         right: 0;
         top: 0;
@@ -71,19 +68,16 @@
         border-radius: 0 50px 50px 0;
     }
 
-    /* Removing the border if it is the first card */
     .card:first-child::before {
         border-top: 0;
         border-top-left-radius: 0;
     }
 
-    /* Removing the border if it is the last card  and it's odd */
     .card:last-child:nth-child(odd)::before {
         border-bottom: 0;
         border-bottom-left-radius: 0;
     }
 
-    /* Removing the border if it is the last card  and it's even */
     .card:last-child:nth-child(even)::before {
         border-bottom: 0;
         border-bottom-right-radius: 0;
@@ -123,7 +117,6 @@
         border-radius: 50%;
     }
 
-    /* Information about the timeline */
     .info {
         display: flex;
         flex-direction: row;
@@ -134,14 +127,12 @@
         width: max-content;
     }
 
-    /* Title of the card */
     .title {
         color: white;
         position: relative;
         font-weight: 400;
     }
 
-    /* Timeline dot  */
     .info::before {
         content: "";
         position: absolute;
@@ -156,17 +147,16 @@
     .card:nth-child(odd) > .info {
         direction: rtl;
     }
-    /* text right if the card is even  */
+    
     .card:nth-child(even) > .info > .title {
         text-align: right;
     }
 
-    /* setting dot to the left if the card is odd */
+    
     .card:nth-child(odd) > .info::before {
         left: -5px;
     }
 
-    /* setting dot to the right if the card is odd */
     .card:nth-child(even) > .info::before {
         right: -5px;
     }
@@ -178,4 +168,4 @@
     .card:nth-child(even) > .info > .iconOutline {
         margin-left: 20px;
     }
-    </style>
+</style>
