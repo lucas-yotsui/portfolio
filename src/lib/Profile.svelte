@@ -25,7 +25,7 @@
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/lucas-yukio-yotsui-de-carvalho-7b6492277",
+      url: "https://www.linkedin.com/in/lucas-yukio-yotsui-de-carvalho/",
       src: "images/linkedin.svg",
     },
     {
