@@ -3,7 +3,6 @@
 	import Experiences from "./lib/Experiences.svelte";
 	import Profile from "./lib/Profile.svelte";
 	import Timeline from "./lib/Timeline.svelte";
-	import { spring } from "svelte/motion";
 
 	let currentChapter = 1;
 
@@ -11,11 +10,6 @@
 	var timelineSection;
 	var projectsObserver;
 	var timelineObserver;
-
-	let springyMove = spring(1, {
-		stiffness: 0.30,
-		damping: 0.05
-	});
 
 	onMount(() => {
 		projectsSection = document.getElementById("Projetos");
@@ -46,12 +40,7 @@
 		projectsObserver.observe(projectsSection);
 		timelineObserver.observe(timelineSection);
 
-		const id = setInterval(() => {
-			$springyMove = ($springyMove > 1 ? 1 : 1.04);
-			console.log($springyMove);
-		}, 5000);
-
-		return () => { clearInterval(id) };
+		return () => { };
 	});
 </script>
 
@@ -69,7 +58,6 @@
 		<h2>Minha Formação</h2>
 		<p
 			class="note"
-			style="transform: scale({$springyMove})"
 		>
 			<i>(Tente colocar o mouse por cima dos itens ou tocar neles para exibir mais detalhes)</i>
 		</p>
