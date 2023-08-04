@@ -12,8 +12,8 @@ Os seguintes items ainda serão implementados futuramente.
 
 1. Seções de projetos e formação clicarem ao lugar quando forem roladas pro campo de visão
 2. Design adaptado para celular
-3. Efeito para indicar itens clicáveis na linha do tempo
-4. Mais projetos, incluindo os repositórios do GitHub
+3. Mais projetos, incluindo os repositórios do GitHub
+4. Expandir os cards de experiência ao clicar no botão 'VER MAIS'
 
 ## A corrigir
 
