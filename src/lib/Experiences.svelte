@@ -21,8 +21,6 @@
             );
         }
 
-        console.log(experiences);
-
         return () => {};
     });
 </script>
