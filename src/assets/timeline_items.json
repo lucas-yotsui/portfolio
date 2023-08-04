@@ -15,13 +15,13 @@
         "title": "Formatura no Ensino Médio",
         "year": 2020,
         "icon": "images/cap.svg",
-        "text": ""
+        "text": "Graduado no Colégio Coeso em São José do Rio Preto, SP"
     },
     {
-        "title": "Início da Graduação na UFSC",
+        "title": "Início da Graduação em Engenharia Mecatrônica",
         "year": 2021,
         "icon": "images/book.svg",
-        "text": ""
+        "text": "Admissão na UFSC Joinville no semestre 2021-2"
     },
     {
         "title": "Certificação Toeic",
@@ -30,15 +30,15 @@
         "text": "Nível de inglês C1 no CEFR, pontuação 985 do máximo 990"
     },
     {
-        "title": "Início do Projeto de pesquisa da Petrobras (OBNZIP)",
+        "title": "Início do Projeto de pesquisa da Petrobras",
         "year": 2022,
         "icon": "images/science.svg",
-        "text": ""
+        "text": "Projeto de iniciação científica OBNZIP"
     },
     {
-        "title": "Transferência para o Projeto de pesquisa da Renault (IASE2)",
-        "year": 2022,
+        "title": "Transferência para o Projeto de pesquisa da Renault",
+        "year": 2023,
         "icon": "images/science.svg",
-        "text": ""
+        "text": "Projeto de iniciação científica IASE2"
     }
 ]
