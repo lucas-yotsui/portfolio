@@ -1,46 +1,52 @@
 <script>
-	import ImgCarrousel from "./ImgCarrousel.svelte";
-    import experiences from "../assets/experiences.json";
-	import { fade, fly } from "svelte/transition";
-	import { sineIn } from "svelte/easing";
+    import ImgCarrousel from "./ImgCarrousel.svelte";
+	import ExperienceExpandedItems from "./ExperienceExpandedItems.svelte";
+    import experiencesData from "../assets/experiences.json";
+	import { cubicInOut } from "svelte/easing";
+	import { tweened } from "svelte/motion";
+	import { beforeUpdate } from "svelte";
 
-    let hovered;
+    let experiences = [];
+    
+    beforeUpdate(() => {
+        for (var experience of experiencesData) {
+            experiences.push(
+                {
+                    data: experience,
+                    size: tweened(0, {
+                        duration: 800,
+                        easing: cubicInOut
+                    })
+                }
+            );
+        }
 
-    function expandCard(name) {
+        console.log(experiences);
 
-    }
+        return () => {};
+    });
 </script>
 
 <div class="experiencesList">
-    {#each experiences as experience (experience.title)}
+    {#each experiences as experience}
         <div 
             role="region"
-            class="experience" 
-            on:mouseenter={(e) => { hovered = experience.title; }}
-            on:mouseleave={(e) => { hovered = ""; }}
+            class="experience"
+            on:mouseenter={(e) => { experience.size.set(1) }}
+            on:mouseleave={(e) => { experience.size.set(0) }}
         >
-            <h1>{ experience.title }</h1>
+            <h1>{ experience.data.title }</h1>
         
             <ImgCarrousel
-                contents={ experience.imgs }
+                contents={ experience.data.imgs }
                 width={ 200 }
             >
             </ImgCarrousel>
             
-            {#if hovered == experience.title}
-                <div 
-                    class="itemsExpanded" 
-                    transition:fade={{ duration:500, easing: sineIn}}
-                >
-                    <ul>
-                        {#each experience.texts as text}
-                            <li>{ text }</li>
-                        {/each}
-                    </ul>    
-                    
-                    <button on:click={(e) => expandCard(experience.title)}>Ler mais</button>
-                </div>
-            {/if}
+            <ExperienceExpandedItems
+                size={ experience.size }
+                data={ experience.data }
+            ></ExperienceExpandedItems>
         </div>
     {/each}
 </div>
@@ -52,12 +58,6 @@
         gap: 30px;
     }
 
-    .itemsExpanded {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }    
     .experience {
         display: flex;
         flex-direction: column;
@@ -68,20 +68,5 @@
         border-radius: 20px;
         padding: 10px 30px 30px 30px;
         box-shadow: 3px 3px 0 lightgray;
-    }
-    
-    button {
-        display: flex;
-        height: 50px;
-        width: 150px;
-        border-radius: 25px;
-        padding: 10px;
-        color: white;
-        background-color: black;
-        box-shadow: 2px 2px lightgray;
-        align-items: center;
-        justify-content: center;
-        text-transform: uppercase;
-        font-weight: 600;
     }
 </style>
