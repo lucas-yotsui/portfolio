@@ -16,8 +16,9 @@
             on:mouseleave={ () => { hovered = ""} }
             animate:flip
         >
-            <div class="info">
-                <div class="textParts">
+        <div class="info">
+            <div class="textParts">
+                    <h2 class="year">{ item.year }</h2>
                     <h3 class="title">{ item.title }</h3>
                     {#if hovered == item.title && item.text != ""}
                     <p
@@ -154,6 +155,10 @@
         position: relative;
         font-weight: 400;
         width: 100%;
+    }
+
+    .year {
+        margin: 0;
     }
 
     .info::before {
