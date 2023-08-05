@@ -78,6 +78,7 @@
     font-size: 80px;
     letter-spacing: -2px;
     margin: 0;
+    width: max-content;
   }
   
   h2 {
