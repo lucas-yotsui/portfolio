@@ -14,19 +14,26 @@
             if(autoplay) {
                 (active < contents.length) ? (++active) : (active = 1);
             }
-        }, 3000);
+        }, 4500);
 
         return () => { clearInterval(id) };
     });
+
+    function changeImage(direction) {
+        if(direction == '+') {
+            (active < contents.length) ? (++active) : (active = 1);
+        } else {
+            (active > 1) ? (--active) : (active = contents.length);
+        }
+
+        autoplay = false;
+        setTimeout(() => { autoplay = true }, 7500);
+    }
 </script>
 
 <div class="imgCarrousel">
     <button on:click={
-        (e) => { 
-            (active < contents.length) ? (++active) : (active = 1);
-            autoplay = false;
-            setTimeout(() => { autoplay = true }, 5000);
-        }
+        (e) => changeImage('+')
     }>
         <img src="images/arrow.svg" alt="Previous">
     </button>
@@ -41,11 +48,7 @@
         {/if}
     {/each}
     <button on:click={
-        (e) => { 
-            (active > 1) ? (--active) : (active = contents.length);
-            autoplay = false;
-            setTimeout(() => { autoplay = true }, 10000);
-        }
+        (e) => changeImage('-')
     }>
         <img src="images/arrow.svg" alt="Next" style="rotate: 180deg;">
     </button>
