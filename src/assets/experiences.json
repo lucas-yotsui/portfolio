@@ -92,8 +92,9 @@
         "texts": [
             "Este é um projeto pessoal de programação que desenvolvi para ajudar a mim mesmo e outros que queiram desenvolver programas em C++ utilizando a biblioteca gráfica SFML, seu objetivo é ser uma base que pode ser copiada sempre que for iniciado um outro projeto deste tipo.",
             "Este projeto inclui um script em CMake que automatiza o processo de download e inclusão da biblioteca SFML no projeto, removendo a necessidade de possuir ela instalada previamente. Esse script também faz o link estático dessa biblioteca, de forma que o programa gerado pode ser enviado separadamente e executado em outro computador também sem a necessidade de ter instalado essa biblioteca previamente.",
-            "Este projeto foi adicionado ao GitHub como um repositório template para que aqueles que desejam usá-lo possam com o clicar de um botão criar um novo repositório seu a partir deste modelo, removendo a necessidade de cloná-lo e depois excluir a pasta <i>.git</i> do diretório clonado",
-            "Na página do GitHub deste projeto está incluso uma clara documentação explicando como utilizá-lo e os requisitos necessários antes para fazê-lo. Está inclusa também a licença de uso no formato do MIT, garantindo uso livre, gratuito e irrestrito deste projeto a qualquer um, porém também isentando a mim de qualquer infração cometida por um usuário"
+            "Este projeto foi adicionado ao GitHub como um repositório template para que aqueles que desejam usá-lo possam com o clicar de um botão criar um novo repositório seu a partir deste modelo, removendo a necessidade de cloná-lo e depois excluir a pasta <i>.git</i> do diretório clonado.",
+            "Na página do GitHub deste projeto está incluso uma clara documentação explicando como utilizá-lo e os requisitos necessários antes para fazê-lo. Está inclusa também a licença de uso no formato do MIT, garantindo uso livre, gratuito e irrestrito deste projeto a qualquer um, porém também isentando a mim de qualquer infração cometida por um usuário.",
+            "Este projeto pode ser encontrado <a href='https://github.com/lucas-yotsui/My-SFML-Template'>neste link</a>"
         ]
     },
     {
@@ -125,8 +126,9 @@
         "texts": [
             "Este é um projeto pessoal de programação que desenvolvi para ajudar a mim mesmo e outros que queiram desenvolver programas em C++ utilizando a biblioteca gráfica wxWidgets, seu objetivo é ser uma base que pode ser copiada sempre que for iniciado um outro projeto deste tipo.",
             "Este projeto inclui um script em CMake que automatiza o processo de download e inclusão da biblioteca SFML no projeto, removendo a necessidade de possuir ela instalada previamente. Esse script também faz o link estático dessa biblioteca, de forma que o programa gerado pode ser enviado separadamente e executado em outro computador também sem a necessidade de ter instalado essa biblioteca previamente.",
-            "Este projeto foi adicionado ao GitHub como um repositório template para que aqueles que desejam usá-lo possam com o clicar de um botão criar um novo repositório seu a partir deste modelo, removendo a necessidade de cloná-lo e depois excluir a pasta <i>.git</i> do diretório clonado",
-            "Na página do GitHub deste projeto está incluso uma clara documentação explicando como utilizá-lo e os requisitos necessários antes para fazê-lo. Está inclusa também a licença de uso no formato do MIT, garantindo uso livre, gratuito e irrestrito deste projeto a qualquer um, porém também isentando a mim de qualquer infração cometida por um usuário"
+            "Este projeto foi adicionado ao GitHub como um repositório template para que aqueles que desejam usá-lo possam com o clicar de um botão criar um novo repositório seu a partir deste modelo, removendo a necessidade de cloná-lo e depois excluir a pasta <i>.git</i> do diretório clonado.",
+            "Na página do GitHub deste projeto está incluso uma clara documentação explicando como utilizá-lo e os requisitos necessários antes para fazê-lo. Está inclusa também a licença de uso no formato do MIT, garantindo uso livre, gratuito e irrestrito deste projeto a qualquer um, porém também isentando a mim de qualquer infração cometida por um usuário.",
+            "Este projeto pode ser encontrado <a href='https://github.com/lucas-yotsui/My-wxWidgets-Template'>neste link</a>"
         ]
     }
 ]
