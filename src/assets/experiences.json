@@ -27,13 +27,14 @@
         "topics": [
             "Desenvolvimento de componentes no Solidworks e fabricação com impressora 3D",
             "Desenvolvimento de software embarcado para ESP32 para controle de um pequeno motor elétrico",
-            "Desenvolvimento de Interface Gráfica de Usuário para interação com software ESP32 e controle do motor acoplado",
+            "Desenvolvimento de Interface Gráfica de Usuário para interação com software embarcado em ESP32",
             "Desenvolvimento de algoritmo computacional em Python para modelagem de sistema físico"
         ],
         "texts": [
-            "Estrutura de Fixação dos Componentes para Experimentos com Seawater Batteries",
-            "Controle e Interface de Usuário do Sistema de Geração de Correnteza",
-            "Sistema de Controle de Agendamentos para Uso do Computador do Laboratório"
+            "O projeto OBNZIP é um trabalho em parceria dos laboratórios vinculados à UFSC LISHA, LVA e LaSin com a Petrobras, cujo objetivo é aprimorar os Ocean Bottom Nodes (OBNs).",
+            "Esse aprimoramento vem de três frentes: o emprego de Inteligência Artificial para comprimir os dados sísmicos coletados, técnicas para gerenciar com maior eficiência a energia disponível nesses equipamentos e a pesquisa de formas alternativas de comunicação entre eles, com veículos submarinos e com navios.",
+            "Durante meu envolvimento com esse projeto, realizei uma vasta gama de atividades, muitas das quais não posso abordar em muitos detalhes em função do termo de confidencialidade que foi assinado no início do mesmo.",
+            "Algumas das atividades que posso compartilhar que desenvolvi são: <ol style='display: flex; flex-direction: column; gap: 7px;'><li>Pesquisa de artigos científicos</li><li>Desenvolvimento de um algoritmo computacional em Python utilizado para modelar um sistema físico</li><li>Desenvolvimento de software embarcado em ESP32 para controle de um pequeno motor elétrico</li><li>Desenvolvimento de interface gráfica de usuário para interação com o software embarcado no ESP32</li><li>Projeto de componentes em impressão 3D necessários para os experimentos</li><li>Desenvolvimento de um sistema online de agendamento de horários para organizar o cronograma de uso do computador do laboratório</li></ol>"
         ]
     },
     {

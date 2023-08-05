@@ -1,8 +1,11 @@
 <script>
 	import { onMount } from "svelte";
-	import Experiences from "./lib/Experiences.svelte";
+	import Experiences from "./lib/ExperiencesList.svelte";
 	import Profile from "./lib/Profile.svelte";
 	import Timeline from "./lib/Timeline.svelte";
+	import ExpandedExperienceCard from "./lib/ExpandedExperienceCard.svelte";
+	import { tweened } from "svelte/motion";
+	import { cubicOut} from "svelte/easing";
 
 	let currentChapter = 1;
 
@@ -10,6 +13,9 @@
 	var timelineSection;
 	var projectsObserver;
 	var timelineObserver;
+
+	let expandedCard = null;
+	let animate = tweened(0, {duration: 1000, easing: cubicOut});
 
 	onMount(() => {
 		projectsSection = document.getElementById("Projetos");
@@ -42,28 +48,49 @@
 
 		return () => { };
 	});
+
+	$: {
+		(expandedCard != null) ? ($animate = 1) : ($animate = 0);
+	}
 </script>
 
-<div class="leftSide">
-	<Profile
-		bind:currentChapter={currentChapter}
-	></Profile>
-</div>
-<div class="rightSide">
-	<section id="Projetos">
-		<h2>Meus Projetos</h2>
-		<Experiences></Experiences>
-	</section>
-	<section id="Formação">
-		<h2>Minha Formação</h2>
-		<p
-			class="note"
+{#if expandedCard}
+	<div class="expandedCardContainer">
+		<ExpandedExperienceCard
+			bind:content={expandedCard}
+			animate={$animate}
+		></ExpandedExperienceCard>
+	</div>
+{:else}
+	<div 
+		class="regularContent"
+			style="opacity: {1 - $animate}; transform: translateX(-{100 * $animate}px);"
 		>
-			<i>(Tente colocar o mouse por cima dos itens ou tocar neles para exibir mais detalhes)</i>
-		</p>
-		<Timeline></Timeline>
-	</section>
-</div>
+		<div class="leftSide">
+			<Profile
+				bind:currentChapter={currentChapter}
+			></Profile>
+		</div>
+		<div class="rightSide">
+			<section id="Projetos">
+				<h2>Meus Projetos</h2>
+				<Experiences
+					bind:expanded={expandedCard}
+				></Experiences>
+			</section>
+			<section id="Formação">
+				<h2>Minha Formação</h2>
+				<p
+					class="note"
+				>
+					<i>(Tente colocar o mouse por cima dos itens ou tocar neles para exibir mais detalhes)</i>
+				</p>
+				<Timeline></Timeline>
+			</section>
+		</div>
+	</div>
+{/if}
+
 
 <style>
 	.leftSide {
