@@ -5,6 +5,10 @@
     export let animate;
 </script>
 
+<svelte:window
+    on:keydown|preventDefault={(e) => {if(e.key == 'Escape') content = null}}
+></svelte:window>
+
 {#if content != null}
     <div 
         class="expandedCard"

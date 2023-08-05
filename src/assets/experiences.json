@@ -85,7 +85,9 @@
             "Uso de recursos modernos do CMake para automatizar download de dependências do projeto",
             "Projeto adicionado ao GitHub como um repositório template, para facilitar a criação de novos projetos a partir dele"
         ],
-        "texts": []
+        "texts": [
+            "Este é um projeto pessoal de programação que desenvolvi para ajudar a mim mesmo e outros que queiram desenvolver programas em C++ utilizando a biblioteca gráfica SFML, seu objetivo é ser uma base que pode ser copiada sempre que for iniciado um outro projeto deste tipo"
+        ]
     },
     {
         "id": 3,
