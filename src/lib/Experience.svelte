@@ -71,5 +71,6 @@
         justify-content: center;
         text-transform: uppercase;
         font-weight: 600;
+        cursor: pointer;
     }
 </style>

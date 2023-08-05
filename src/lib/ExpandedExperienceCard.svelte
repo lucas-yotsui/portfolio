@@ -19,11 +19,11 @@
                 <div class="imagesAndTopics">
                     <ImgCarrousel
                         contents={ content.imgs }
-                        width={ 200 }
+                        width={ 250 }
                     >
                     </ImgCarrousel>
                     
-                    <ul>
+                    <ul style="font-size: small;">
                         {#each content.topics as topic}
                             <li>{ topic }</li>
                         {/each}
@@ -115,5 +115,6 @@
         box-shadow: 2px 2px lightgray;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 </style>

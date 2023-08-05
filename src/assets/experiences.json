@@ -22,6 +22,11 @@
                 "id": 4,
                 "src": "obnzip/controle-motor.gif",
                 "alt": "Interface de usuário para controle do motor"
+            },
+            {
+                "id": 5,
+                "src": "obnzip/agendamentos.gif",
+                "alt": "Interface para reserva de horário no computador do laboratório"
             }
         ],
         "topics": [
