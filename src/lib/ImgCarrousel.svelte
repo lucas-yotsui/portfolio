@@ -61,6 +61,7 @@
     
     img {
         aspect-ratio: 288 / 250;
+        object-fit: contain;
     }
     
     button {

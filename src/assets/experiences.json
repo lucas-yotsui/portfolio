@@ -17,7 +17,18 @@
                 "id": 3,
                 "src": "obnzip/3-angulo-tanque.png",
                 "alt": "Terceiro ângulo do modelo 3D do tanque usado nos experimentos"
+            },
+            {
+                "id": 4,
+                "src": "obnzip/controle-motor.gif",
+                "alt": "Interface de usuário para controle do motor"
             }
+        ],
+        "topics": [
+            "Desenvolvimento de componentes no Solidworks e fabricação com impressora 3D",
+            "Desenvolvimento de software embarcado para ESP32 para controle de um pequeno motor elétrico",
+            "Desenvolvimento de Interface Gráfica de Usuário para interação com software ESP32 e controle do motor acoplado",
+            "Desenvolvimento de algoritmo computacional em Python para modelagem de sistema físico"
         ],
         "texts": [
             "Estrutura de Fixação dos Componentes para Experimentos com Seawater Batteries",
@@ -33,47 +44,69 @@
                 "id": 1,
                 "src": "iase2/test1.png",
                 "alt": "Placeholder for dummy data"
-            },
-            {
-                "id": 2,
-                "src": "iase2/test2.png",
-                "alt": "Placeholder for dummy data"
-            },
-            {
-                "id": 3,
-                "src": "iase2/test3.png",
-                "alt": "Placeholder for dummy data"
-            },
-            {
-                "id": 4,
-                "src": "iase2/test4.png",
-                "alt": "Placeholder for dummy data"
-            },
-            {
-                "id": 5,
-                "src": "iase2/test5.png",
-                "alt": "Placeholder for dummy data"
-            },
-            {
-                "id": 6,
-                "src": "iase2/test6.png",
-                "alt": "Placeholder for dummy data"
-            },
-            {
-                "id": 7,
-                "src": "iase2/test7.png",
-                "alt": "Placeholder for dummy data"
-            },
-            {
-                "id": 8,
-                "src": "iase2/test8.png",
-                "alt": "Placeholder for dummy data"
             }
         ],
-        "texts": [
+        "topics": [
             "Ainda não fiz nada",
             "Quando fizer coloco",
             "Até lá fica aqui pra guardar lugar"
-        ]
+        ],
+        "texts": []
+    },
+    {
+        "id": 2,
+        "title": "Repositório base para projetos com SFML",
+        "imgs":[
+            {
+                "id": 1,
+                "src": "sfml/github-repo.png",
+                "alt": "Repositório do projeto no GitHub"
+            },
+            {
+                "id": 2,
+                "src": "sfml/sfml-readme.gif",
+                "alt": "Readme do repositório no GitHub"
+            },
+            {
+                "id": 3,
+                "src": "sfml/sfml-example.png",
+                "alt": "Programa de exemplo incluso no projeto"
+            }
+        ],
+        "topics": [
+            "Programação em C++",
+            "Uso de CMake para automatizar processo de geração e compilação",
+            "Uso de recursos modernos do CMake para automatizar download de dependências do projeto",
+            "Projeto adicionado ao GitHub como um repositório template, para facilitar a criação de novos projetos a partir dele"
+        ],
+        "texts": []
+    },
+    {
+        "id": 3,
+        "title": "Repositório base para projetos com wxWidgets",
+        "imgs":[
+            {
+                "id": 1,
+                "src": "wx-widgets/github-repo.png",
+                "alt": "Repositório do projeto no GitHub"
+            },
+            {
+                "id": 2,
+                "src": "wx-widgets/wx-readme.gif",
+                "alt": "Readme do repositório no GitHub"
+            },
+            {
+                "id": 3,
+                "src": "wx-widgets/wx-example.png",
+                "alt": "Programa de exemplo incluso no projeto"
+            }
+        ],
+        "topics": [
+            "Programação em C++",
+            "Uso de CMake para automatizar processo de geração e compilação",
+            "Uso de recursos modernos do CMake para automatizar download de dependências do projeto",
+            "Projeto adicionado ao GitHub como um repositório template, para facilitar a criação de novos projetos a partir dele"
+        ],
+        "texts": []
     }
 ]

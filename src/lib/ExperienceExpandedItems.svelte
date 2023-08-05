@@ -8,8 +8,8 @@
     style="max-height: { $size * 800 }px; opacity: { $size }"
 >
     <ul>
-        {#each data.texts as text}
-            <li>{ text }</li>
+        {#each data.topics as topic}
+            <li>{ topic }</li>
         {/each}
     </ul>    
     
